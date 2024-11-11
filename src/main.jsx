@@ -1,6 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client'; // Necesario para React 18
-import App from './App'; // Importamos el componente principal de la app
+import '../src/index.css'
+import ReactDOM from 'react-dom/client';
+import App from './App';
 
-const root = ReactDOM.createRoot(document.getElementById('app')); // Montamos la app en el div con id="app"
-root.render(<App />); // Renderizamos el componente App
+const root = ReactDOM.createRoot(document.getElementById('app'));
+root.render(<App />); 
