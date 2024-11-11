@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
-import Home from './pages/home'; // Importamos el componente Home
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/home';
+import Header from '../src/components/header/header';
+import Services from './pages/services';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div>
-      <h1>App Principal</h1>
-      <Home /> {/* Aquí renderizamos el componente Home */}
-    </div>
+    <Router>
+        <Header />
+        <Routes>
+        <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+        </Routes>
+      </Router>
   );
 }
 
