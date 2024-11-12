@@ -5,7 +5,6 @@ import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons
 
 const Carrousel = ({ images }) => {
     const carrouselRef = useRef(null);
-
     const scrollLeft = () => {
         carrouselRef.current.scrollBy({ left: -300, behavior: 'smooth' });
     };
@@ -22,7 +21,9 @@ const Carrousel = ({ images }) => {
             <div className="carrousel-container" ref={carrouselRef}>
                 <div className="image-wrapper">
                     {images.map((image, index) => (
+
                         <img key={index} src={image} alt={`Slide ${index + 1}`} className="carousel-image" />
+                        
                     ))}
                 </div>
             </div>

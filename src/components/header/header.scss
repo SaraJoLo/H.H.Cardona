@@ -29,10 +29,10 @@
 .navOp {
     text-decoration: none;
     color: #ffffff; 
-    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .navOp:hover {
-    transform: translateY(-5px); /* Movimiento hacia arriba */
-    color: #ff6347; /* Cambio de color cuando se pasa el ratón (naranja) */
+    transform: translateY(-5px);
+    color: #ff6347;
 }

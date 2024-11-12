@@ -1,0 +1,76 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat';
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin: 2rem;
+  font-weight: 300;
+  color: #000000;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.text-section {
+  flex: 1;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-section p {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.divider {
+  .divider {
+    width: 1px;
+    height: 100%;
+    background-color: #000000;
+  }
+}
+
+.icon-section {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon-section h3 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.amenity-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.amenity-icon {
+  color: #505801;
+  font-size: 1.2rem;
+}
