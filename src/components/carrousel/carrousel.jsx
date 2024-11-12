@@ -1,47 +1,36 @@
-
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import './carrousel.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Carrousel = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+    const carrouselRef = useRef(null);
 
-  const goToPrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    const scrollLeft = () => {
+        carrouselRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+    };
+
+    const scrollRight = () => {
+        carrouselRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+    };
+
+    return (
+        <section className="boxCarrousel">
+            <button className="nav-button left" onClick={scrollLeft}>
+                <FontAwesomeIcon icon={faChevronLeft} style={{ color: '#ffffff' }} />
+            </button>
+            <div className="carrousel-container" ref={carrouselRef}>
+                <div className="image-wrapper">
+                    {images.map((image, index) => (
+                        <img key={index} src={image} alt={`Slide ${index + 1}`} className="carousel-image" />
+                    ))}
+                </div>
+            </div>
+            <button className="nav-button right" onClick={scrollRight}>
+                <FontAwesomeIcon icon={faChevronRight} style={{ color: '#ffffff' }} />
+            </button>
+        </section>
     );
-  };
-
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  return (
-    <section clalss="boxCarrousel">
-        <div className="carrousel-container">
-        <button className="nav-button prev" onClick={goToPrevious}>
-        &#10094;
-      </button>
-      <div className="image-wrapper">
-        <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
-      </div>
-      <button className="nav-button next" onClick={goToNext}>
-        &#10095;
-      </button>
-      <div className="indicators">
-        {images.map((_, index) => (
-          <span
-            key={index}
-            className={`indicator ${index === currentIndex ? 'active' : ''}`}
-            onClick={() => setCurrentIndex(index)}
-          />
-        ))}
-      </div>
-        </div>
-      
-    </section>
-  );
 };
 
 export default Carrousel;
