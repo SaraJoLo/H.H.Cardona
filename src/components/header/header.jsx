@@ -6,7 +6,7 @@ function Header() {
   return (
     <section class="headerBox">
       <div className="titleBox">
-        <h1>Holiday Home Cardona</h1>
+        <Link to="/" className="titleLink">Holiday Home Cardona</Link>
       </div>
       <div >
         <ul className="navBar">

@@ -1,0 +1,66 @@
+.boxCarrousel {
+  background-color: #505801;
+  width: 100%;
+  height: auto;
+  margin-top: 4rem;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.carrousel-container {
+  width: 90%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory; 
+}
+
+.carrousel-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.image-wrapper {
+  width: 19.8125rem;
+  display: flex;
+  gap: 1.4rem;
+}
+
+.carousel-image {
+  width: 19.8125rem;
+  height: 14.375rem;
+  border-radius: 8px;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.carousel-image:hover {
+  transform: scale(1.2); 
+}
+.nav-button {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 24px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.left {
+  left: 1rem;
+}
+
+.right {
+  right: 1rem;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
