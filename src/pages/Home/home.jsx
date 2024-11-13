@@ -1,8 +1,9 @@
 import React from 'react';
 import './home.scss';
+import { Link } from 'react-router-dom';
 import Carrousel from '../../components/carrousel/carrousel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWifi, faMountain, faSwimmingPool, faPaw, faGamepad, faCar, faTv, faBaby, faKitchenSet } from '@fortawesome/free-solid-svg-icons';
+import { faWifi, faSoap ,faMountain, faSwimmingPool, faPaw, faGamepad, faCar, faTv, faBaby, faKitchenSet } from '@fortawesome/free-solid-svg-icons';
 
 const amenities = [
   { icon: faWifi, label: "Wi-Fi" },
@@ -13,6 +14,7 @@ const amenities = [
   { icon: faCar, label: "Aparcamiento gratuito" },
   { icon: faTv, label: "TV" },
   { icon: faBaby, label: "Equipamiento para bebés" },
+  { icon: faSoap, label: "Lavadora"},
   { icon: faKitchenSet, label: "Cocina equipada" },
 ]
 const images = [
@@ -56,6 +58,9 @@ function Home() {
                 <span>{item.label}</span>
               </div>
             ))}
+          </div>
+          <div className="moreButton">
+            <Link to="/services" className="button-link">Y más  </Link>
           </div>
         </div>
       </div>

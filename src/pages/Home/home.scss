@@ -21,56 +21,76 @@
 
 .text-section {
   flex: 1;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 3rem;
+  padding: 1rem;
 }
 
 .text-section p {
   margin: 0.8rem 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
 }
 
 .divider {
-  .divider {
-    width: 1px;
-    height: 100%;
-    background-color: #000000;
-  }
+    width: 2px;
+    background-color: #929292;
 }
+
 
 .icon-section {
   flex: 1;
   padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
 }
 
 .icon-section h3 {
-  font-size: 1.25rem;
-  font-weight: normal;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
+  justify-content: safe;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .amenities-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
 }
 
 .amenity-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.875rem;
-  color: #555;
+  gap: 0.75rem;
+  font-size: 1.2rem;
+  color: #000000;
 }
 
 .amenity-icon {
-  color: #505801;
+  color: #000000;
+  font-size: 1rem;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.moreButton .button-link{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #000000;
   font-size: 1.2rem;
+  text-decoration: none;
+  
+  &::after {
+    content: " >";
+  }
 }
