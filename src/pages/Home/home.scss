@@ -89,8 +89,5 @@
   color: #000000;
   font-size: 1.2rem;
   text-decoration: none;
-  
-  &::after {
-    content: " >";
-  }
+  gap: 1rem;
 }
