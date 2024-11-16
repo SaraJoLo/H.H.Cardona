@@ -3,7 +3,8 @@ import './home.scss';
 import { Link } from 'react-router-dom';
 import Carrousel from '../../components/carrousel/carrousel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWifi, faSoap ,faMountain, faSwimmingPool, faPaw, faGamepad, faCar, faTv, faBaby, faKitchenSet } from '@fortawesome/free-solid-svg-icons';
+import {  faWifi, faSoap ,faMountain, faSwimmingPool, faPaw, faGamepad, faCar, faTv, faBaby, faKitchenSet, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import InfoService from '../../components/infoservice/infoservice';
 
 const amenities = [
   { icon: faWifi, label: "Wi-Fi" },
@@ -40,7 +41,7 @@ function Home() {
         <p>"Tu Refugio en Lloret de Mar: tranquilidad y confort en cada rincón de Holiday Home Cardona"</p>
       </div>
       <Carrousel images={images} />
-      
+
       <div className="description-container">
         <div className="text-section">
           <p>Escapa al lujo y la tranquilidad en esta casa rural en Lloret de Mar. Con capacidad para 13 personas, piscina privada, amplios jardines y actividades para toda la familia. ¡Perfecta para un retiro memorable! La piscina en verano y la chimenea en invierno son, sin duda alguna, sus mayores atracciones.</p>
@@ -60,10 +61,14 @@ function Home() {
             ))}
           </div>
           <div className="moreButton">
-            <Link to="/services" className="button-link">Y más  </Link>
+            <Link to="/services" className="button-link">
+              Y más
+              <FontAwesomeIcon icon={faChevronRight} className='arrowButton' />
+            </Link>
           </div>
         </div>
       </div>
+      <InfoService />
     </div>
   );
 }
