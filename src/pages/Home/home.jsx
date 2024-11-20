@@ -41,7 +41,6 @@ function Home() {
         <p>"Tu Refugio en Lloret de Mar: tranquilidad y confort en cada rincón de Holiday Home Cardona"</p>
       </div>
       <Carrousel images={images} />
-
       <div className="description-container">
         <div className="text-section">
           <p>Escapa al lujo y la tranquilidad en esta casa rural en Lloret de Mar. Con capacidad para 13 personas, piscina privada, amplios jardines y actividades para toda la familia. ¡Perfecta para un retiro memorable! La piscina en verano y la chimenea en invierno son, sin duda alguna, sus mayores atracciones.</p>
@@ -67,6 +66,12 @@ function Home() {
             </Link>
           </div>
         </div>
+      </div>
+      <div className='contact-box'>
+        <p>Contacta con los propietarios para reservar</p>
+        <Link to="/contact" className="button-link-contact">
+          CONTACTAR
+          </Link>
       </div>
       <InfoService />
     </div>
