@@ -2,8 +2,9 @@ import React from 'react';
 import './home.scss';
 import { Link } from 'react-router-dom';
 import Carrousel from '../../components/carrousel/carrousel';
+import Map from '../../components/map/map';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faWifi, faSoap ,faMountain, faSwimmingPool, faPaw, faGamepad, faCar, faTv, faBaby, faKitchenSet, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faWifi, faSoap, faMountain, faSwimmingPool, faPaw, faGamepad, faCar, faTv, faBaby, faKitchenSet, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import InfoService from '../../components/infoservice/infoservice';
 
 const amenities = [
@@ -15,7 +16,7 @@ const amenities = [
   { icon: faCar, label: "Aparcamiento gratuito" },
   { icon: faTv, label: "TV" },
   { icon: faBaby, label: "Equipamiento para bebés" },
-  { icon: faSoap, label: "Lavadora"},
+  { icon: faSoap, label: "Lavadora" },
   { icon: faKitchenSet, label: "Cocina equipada" },
 ]
 const images = [
@@ -71,9 +72,10 @@ function Home() {
         <p>Contacta con los propietarios para reservar</p>
         <Link to="/contact" className="button-link-contact">
           CONTACTAR
-          </Link>
+        </Link>
       </div>
       <InfoService />
+      <Map />
     </div>
   );
 }
