@@ -2,8 +2,9 @@ import React from 'react';
 import './home.scss';
 import { Link } from 'react-router-dom';
 import Carrousel from '../../components/carrousel/carrousel';
+import Map from '../../components/map/map';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faWifi, faSoap ,faMountain, faSwimmingPool, faPaw, faGamepad, faCar, faTv, faBaby, faKitchenSet, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faWifi, faSoap, faMountain, faSwimmingPool, faPaw, faGamepad, faCar, faTv, faBaby, faKitchenSet, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import InfoService from '../../components/infoservice/infoservice';
 
 const amenities = [
@@ -15,7 +16,7 @@ const amenities = [
   { icon: faCar, label: "Aparcamiento gratuito" },
   { icon: faTv, label: "TV" },
   { icon: faBaby, label: "Equipamiento para bebés" },
-  { icon: faSoap, label: "Lavadora"},
+  { icon: faSoap, label: "Lavadora" },
   { icon: faKitchenSet, label: "Cocina equipada" },
 ]
 const images = [
@@ -41,7 +42,6 @@ function Home() {
         <p>"Tu Refugio en Lloret de Mar: tranquilidad y confort en cada rincón de Holiday Home Cardona"</p>
       </div>
       <Carrousel images={images} />
-
       <div className="description-container">
         <div className="text-section">
           <p>Escapa al lujo y la tranquilidad en esta casa rural en Lloret de Mar. Con capacidad para 13 personas, piscina privada, amplios jardines y actividades para toda la familia. ¡Perfecta para un retiro memorable! La piscina en verano y la chimenea en invierno son, sin duda alguna, sus mayores atracciones.</p>
@@ -68,7 +68,14 @@ function Home() {
           </div>
         </div>
       </div>
+      <div className='contact-box'>
+        <p>Contacta con los propietarios para reservar</p>
+        <Link to="/contact" className="button-link-contact">
+          CONTACTAR
+        </Link>
+      </div>
       <InfoService />
+      <Map />
     </div>
   );
 }
