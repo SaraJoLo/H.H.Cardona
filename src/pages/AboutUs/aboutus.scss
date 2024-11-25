@@ -7,11 +7,12 @@
     font-family: 'montserrat', sans-serif;
 }
   
-h2 {
-    text-align: center;
-    font-family: 'Overlock SC', sans-serif;
+h3 {
+    text-align: left;
+    margin-left: 2rem;
     font-size: 24px;
     margin-bottom: 1rem;
+    font-weight: 300;
 }
   
 .content-box {
@@ -55,8 +56,8 @@ h2 {
    font-size: 16px;
 }
   
-.text-box{
-    flex: 0 0 50%;
+.about-box{
+    flex: 0 50%;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -64,14 +65,15 @@ h2 {
     justify-content:first baseline;
     line-height: 2;
     margin-top: 0.5rem;
+    padding-right: 20%;
 }
   
-.text-box h3 {
+.about-box h3 {
     margin-bottom: 2rem;
     margin-top: 0;
 }
   
-.text-box p {
+.about-box p {
     font-size: 14px;
 }
   
