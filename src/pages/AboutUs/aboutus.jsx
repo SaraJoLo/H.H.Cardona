@@ -8,7 +8,7 @@ function AboutUs() {
     <div className='admin-box'>
       <h2>Sobre nosotras</h2>
 
-      <div className='content-box'>
+     <div className='content-box'>
         <div className='about-card'>
           <img
             src='../public/assets/aboutUs.jpg'
