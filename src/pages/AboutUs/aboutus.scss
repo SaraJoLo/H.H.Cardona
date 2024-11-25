@@ -1,0 +1,77 @@
+.admin-box {
+    display: flex;
+    flex-direction: column; 
+    justify-content:space-around;
+    gap: 1rem;
+    margin: 2rem auto;
+    font-family: 'montserrat', sans-serif;
+}
+  
+h2 {
+    text-align: center;
+    font-family: 'Overlock SC', sans-serif;
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+  
+.content-box {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+  
+ 
+.about-card {
+    flex: 0 0 15%;
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+    background-color: #c1c87d;
+    border-radius: 20px;
+    padding: 1rem;
+    text-align: center;
+}
+  
+.admin-img {
+    width: 84px;
+    margin-bottom: 1rem;
+}
+.admin-features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+  
+.admin-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+    font-size: 14px;
+    color: #333;
+}
+  
+.admin-features li svg {
+   font-size: 16px;
+}
+  
+.text-box{
+    flex: 0 0 50%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:first baseline;
+    line-height: 2;
+    margin-top: 0.5rem;
+}
+  
+.text-box h3 {
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+  
+.text-box p {
+    font-size: 14px;
+}
+  
