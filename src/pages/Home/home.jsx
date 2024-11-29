@@ -6,6 +6,7 @@ import Map from '../../components/map/map';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWifi, faSoap, faMountain, faSwimmingPool, faPaw, faGamepad, faCar, faTv, faBaby, faKitchenSet, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import InfoService from '../../components/infoservice/infoservice';
+import Reviews from '../../components/reviews/reviews';
 
 const amenities = [
   { icon: faWifi, label: "Wi-Fi" },
@@ -76,6 +77,7 @@ function Home() {
       </div>
       <InfoService />
       <Map />
+      < Reviews />
     </div>
   );
 }
