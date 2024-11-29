@@ -77,7 +77,9 @@ function Home() {
       </div>
       <InfoService />
       <Map />
-      < Reviews />
+      <div id="reviews">
+       < Reviews />
+      </div>
     </div>
   );
 }
