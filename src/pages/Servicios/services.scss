@@ -1,0 +1,22 @@
+.services-page {
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+  
+    h3 {
+        text-align: left;
+        justify-content: safe;
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+    }
+  
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 1rem;
+      margin: 0.5rem;
+      justify-items:center;
+    }
+  }
+  

@@ -1,0 +1,48 @@
+.footerBox {
+    height: 1rem;
+    background-color: #C25721;
+    color: #ffffff;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .footerContent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .footerText {
+    font-size: 0.6rem;
+  }
+  
+  .footerNav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .footerLink {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.8rem;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: #ffc8bf;
+    }
+  }
+  
+  .socialIcons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0px;
+  }
+  
+  .social-link {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+  

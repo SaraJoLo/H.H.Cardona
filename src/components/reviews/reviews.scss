@@ -1,0 +1,107 @@
+.reviews-container {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+    h3 {
+        margin-top: 10rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+        text-align: left;
+        padding-right: 80%;
+        color: #333;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 2rem;
+        padding: 3rem;
+        gap: 2rem;
+    }
+}
+
+.columnone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 0.5rem;
+    float: left;
+
+    img {
+        max-width: 14rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.fa-icon {
+    color: #1f1f1f;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+.starsfirst {
+    color: #FFD700;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    animation: star-glow 1.5s infinite;
+
+    svg {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        &:hover {
+            transform: scale(1.2);
+            opacity: 0.8;
+        }
+    }
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.columntwo {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+    margin-left: 2rem;
+    font-style: normal;
+}
+
+@keyframes star-glow {
+    0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 0.3125rem #FFD700);
+    }
+    50% {
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 1rem #FFD700);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
