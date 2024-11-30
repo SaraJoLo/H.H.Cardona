@@ -1,5 +1,7 @@
-import React from 'react';
 import './home.scss';
+import { useState } from 'react';
+import React from 'react';
+import { useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import Carrousel from '../../components/carrousel/carrousel';
 import Map from '../../components/map/map';
@@ -18,26 +20,31 @@ const amenities = [
   { icon: faTv, label: "TV" },
   { icon: faBaby, label: "Equipamiento para bebés" },
   { icon: faSoap, label: "Lavadora" },
-  { icon: faKitchenSet, label: "Cocina equipada" },
-]
-const images = [
-  '../public/assets/greatviews/drone.webp',
-  '../public/assets/garden/chiringuitocinco.jpg',
-  '../public/assets/livingroom/livingsiete.webp',
-  '../public/assets/garden/frentederecho.webp',
-  '../public/assets/livingroom/living8.jpg',
-  '../public/assets/garden/inicio1.webp',
-  '../public/assets/greatviews/asaodres.jpg',
-  '../public/assets/garden/dronetres.webp',
-  '../public/assets/rooms/room11.jpg',
-  '../public/assets/garden/frentederecho.webp',
-  '../public/assets/garden/uno.webp',
-  '../public/assets/livingroom/living5.webp',
-  '../public/assets/garden/dos.webp',
+  { icon: faKitchenSet, label: "Cocina equipada" }
 ];
 
 function Home() {
-  return (
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    fetch('/assets/json/img.json')
+        .then((res) => {
+            if (!res.ok) {
+                throw new Error(`HTTP error! status: ${res.status}`);
+            }
+            return res.json();
+        })
+        .then((data) => {
+            if (data.images && data.images.carrousel) {
+                setImages(data.images.carrousel); // Accede a data.images.carrousel
+            } else {
+                console.error('Carrousel key not found in JSON');
+            }
+        })
+        .catch((err) => console.error('Fetch error:', err));
+}, []);
+
+    return (
     <div className="home-container">
       <div className='subtitle'>
         <p>"Tu Refugio en Lloret de Mar: tranquilidad y confort en cada rincón de Holiday Home Cardona"</p>
@@ -77,7 +84,7 @@ function Home() {
       </div>
       <InfoService />
       <Map />
-      <div id="reviews">
+      <div id="reviews" className='reviews-box'>
        < Reviews />
       </div>
     </div>
