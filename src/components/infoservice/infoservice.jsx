@@ -5,11 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { Link as ScrollLink } from 'react-scroll';
 
+const img ="/assets/garden/19garden.jpg";
 function InfoService() {
     return (
         <section className="section-container">
              <div className="foundImg">
-               <img src='../../public/assets/garden/dronetres.webp' alt="imagen-de-fondo" />
+               <img src={img} alt="imagen-de-fondo" />
             </div>
         <div className="info-container">
         <ul>

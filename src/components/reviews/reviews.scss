@@ -1,20 +1,17 @@
 .reviews-container {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
     font-weight: 300;
     display: flex;
     flex-direction: column;
     text-decoration: none;
 
-    h3 {
-        margin-top: 10rem;
-        font-size: 1.5rem;
-        font-weight: 400;
-        margin-bottom: 1.5rem;
-        text-align: left;
-        padding-right: 80%;
+    .main-title{
+        width: 100%;
         color: #333;
+        text-align: left;
+        font-size: 1.2rem;
+        font-weight: 300;
     }
 
     ul {
@@ -25,7 +22,7 @@
         padding: 3rem;
         gap: 2rem;
     }
-}
+
 
 .columnone {
     display: flex;
@@ -104,4 +101,5 @@
         opacity: 1;
         transform: scale(1);
     }
+}
 }

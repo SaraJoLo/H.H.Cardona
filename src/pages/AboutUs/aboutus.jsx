@@ -11,7 +11,7 @@ function AboutUs() {
      <div className='content-box'>
         <div className='about-card'>
           <img
-            src='../public/assets/aboutUs.jpg'
+            src='/assets/experience/aboutUs.jpg'
             alt='aboutUs'
             className='admin-img'
           />

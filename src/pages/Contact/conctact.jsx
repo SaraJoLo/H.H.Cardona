@@ -2,6 +2,7 @@ import React from 'react';
 import './contact.scss';
 import ContactCard from '../../components/contact/contactcard';
 
+const img ="/assets/experience/aboutUs.jpg";
 function Contact() {
   const owner = {
     name1: "Juan",
