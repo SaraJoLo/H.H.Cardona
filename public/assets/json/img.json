@@ -67,7 +67,7 @@
       "alt": "Segunda área del jardín con sombra y asientos"
      }
     ],
-    "rooms" : [
+    "Habitaciones" : [
       {
         "id": 1,
         "url": "/assets/rooms/room1.webp",
@@ -125,7 +125,7 @@
       }
     ],
 
-    "garden" : [
+    "Jardín" : [
       {
         "id": 1,
         "url":"/assets/garden/1drone.webp",
@@ -253,7 +253,7 @@
         "alt": "Segunda área del jardín con sombra y asientos"
       }
     ],
-    "bathroom" : [
+    "Lavabos" : [
       {
         "id": 1,
         "url": "/assets/bathroom/bath1.webp",
@@ -265,7 +265,7 @@
         "alt": "Baño con ducha y decoración"
       }
     ],
-    "livingroom" : [
+    "Living" : [
       {
         "id": 1,
         "url": "/assets/livingroom/living1.webp",
@@ -307,7 +307,7 @@
         "alt": "Sala de estar amplia con muebles minimalistas"
       }
     ],
-    "greatviews" : [
+    "Vistas" : [
       {
         "id": 1,
         "url": "/assets/greatviews/1asaodres.jpg",
@@ -374,7 +374,7 @@
         "alt": "jardin delantero de la casa"
       }
     ],
-    "kitchen" : [
+    "Cocina" : [
       {
         "id": 1,
         "url": "/assets/kitchen/kit1.webp",
@@ -396,10 +396,10 @@
         "alt": "Cocina con isla central y decoración moderna"
       }
     ],
-    "experience" : [
+    "Experiencias" : [
       {
         "id": 1,
-        "url": "/assets/experience/uno.ipg",
+        "url": "/assets/experience/uno.jpg",
         "alt": "Experiencia de descanso en con amigas jugando futbolin"
       },
       {
@@ -423,7 +423,7 @@
         "alt": "Alejandra y Juan"
       }
     ],
-    "lloret" :[
+    "Lloret de Mar" :[
       {
         "id": 1,
         "url": "/assets/lloret/1lloret.webp",

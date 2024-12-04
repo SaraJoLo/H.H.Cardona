@@ -36,7 +36,7 @@ function Home() {
         })
         .then((data) => {
             if (data.images && data.images.carrousel) {
-                setImages(data.images.carrousel); // Accede a data.images.carrousel
+                setImages(data.images.carrousel);
             } else {
                 console.error('Carrousel key not found in JSON');
             }

@@ -31,7 +31,7 @@ function Reviews() {
           </div>
         </div>
         <div className="columntwo">
-          <h3 className="service-reviews">Recomendaciones de los húespedes: </h3>
+          <p>Recomendaciones de los húespedes: </p>
           <ul>
             <p>
               <FontAwesomeIcon icon={faSprayCanSparkles} className="fa-icon" />
