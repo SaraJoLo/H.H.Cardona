@@ -1,18 +1,19 @@
 .footerBox {
-    width: 98%;
-    height: 1rem;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: #C25721;
     color: #ffffff;
-    padding: 20px;
     font-family: 'Montserrat', sans-serif;
   }
   
   .footerContent {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: space-around;
+    gap: 20rem;
   }
   
   .footerText {
@@ -39,11 +40,11 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 0px;
+    gap:0.5rem;
   }
   
   .social-link {
     color: #ffffff;
     font-size: 1.5rem;
-    margin-left: 1rem;
   }
   

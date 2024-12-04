@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overlock+SC&display=swap');
 
 *{
-  margin: 0px;
+  margin: 0;
 }
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 
 body{
   min-height: 100vh;
