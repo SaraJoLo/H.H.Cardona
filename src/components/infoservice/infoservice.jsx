@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { Link as ScrollLink } from 'react-scroll';
 
-const img ="/assets/garden/19garden.jpg";
+const img ="/assets/greatviews/12vistas.webp";
 function InfoService() {
     return (
         <section className="section-container">
