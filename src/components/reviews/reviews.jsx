@@ -33,7 +33,7 @@ function Reviews() {
           </div>
         </div>
         <div className="columntwo">
-          <p className="service-reviews">Recomendaciones de los húespedes: </p>
+          <p>Recomendaciones de los húespedes: </p>
           <ul>
             <p>
               <FontAwesomeIcon icon={faSprayCanSparkles} className="fa-icon" />
