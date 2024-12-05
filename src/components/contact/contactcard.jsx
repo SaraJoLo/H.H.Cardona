@@ -24,6 +24,8 @@ const ContactCard = ({ name1, phone, email, name2, phone2 }) => {
           <FontAwesomeIcon icon={faWhatsapp}/> 
           <p>
             Enviar mensaje por WhatsApp.
+            <br />
+            (+34675621904)
           </p>
         </a>
         <a
@@ -49,6 +51,8 @@ const ContactCard = ({ name1, phone, email, name2, phone2 }) => {
           <FontAwesomeIcon icon={faWhatsapp} />
           <p>
             Enviar mensaje por WhatsApp.
+            <br />
+            (+34605116278)
           </p>
         </a>
         </div>

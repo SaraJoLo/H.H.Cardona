@@ -18,7 +18,7 @@ function Contact() {
         <p>Envía un mensaje por WhatsApp para consultar por disponibilidad y realizar tu reserva. Estamos aquí para ayudarte.</p>
         <ContactCard {...owner} />
       </div>
-    
+       
     </div>
   );
 }
