@@ -8,6 +8,7 @@ import Contact from './pages/Contact/conctact';
 import AboutUs from './pages/AboutUs/aboutus';
 import Footer from '../src/components/footer/footer';
 import Legal from './pages/Legal/legal';
+import Questions from './pages/Questions/questions';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/aboutus" element={<AboutUs />} />
+          <Route path='/questions' element={<Questions />} />
           <Route path="/legal" element={<Legal />} />
         </Routes>
         <Footer />
