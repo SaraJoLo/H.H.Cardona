@@ -3,7 +3,8 @@ import './gallery.scss';
 
 const Gallery = () => {
   const [images, setImages] = useState([]);
-  const [currentCategory, setCurrentCategory] = useState('experience'); // Categoría inicial válida
+  const [currentCategory, setCurrentCategory] = useState('experience');
+  const [selectedImage, setSelectedImage] = useState(null); // Estado para la imagen seleccionada en el modal
 
   useEffect(() => {
     const fetchImages = async () => {
@@ -34,12 +35,21 @@ const Gallery = () => {
     fetchImages();
   }, []);
 
+  const openModal = (imageUrl) => {
+    setSelectedImage(imageUrl);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
   const renderImages = () => {
-    if (!images[currentCategory] || images[currentCategory].length === 0)
+    if (!images[currentCategory] || images[currentCategory].length === 0) {
       return <p>Selecciona una categoría válida.</p>;
+    }
 
     return images[currentCategory].map((image) => (
-      <div key={image.id} className="image-container">
+      <div key={image.id} className="image-container" onClick={() => openModal(image.url)}>
         <img src={image.url} alt={image.alt} />
       </div>
     ));
@@ -62,6 +72,17 @@ const Gallery = () => {
       </div>
 
       <div className="image-gallery">{renderImages()}</div>
+
+      {selectedImage && (
+        <div className="modal" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <img src={selectedImage} alt="Zoomed" />
+            <button className="close-button" onClick={closeModal}>
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
