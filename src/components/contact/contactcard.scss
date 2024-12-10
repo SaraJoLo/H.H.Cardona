@@ -1,72 +1,85 @@
 .contact-card {
-    background-color: #505801;
-    width: 60%;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-
+    background-color: #505801;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  
     h2 {
-        font-size: 2rem;
-        font-family: 'Overlock SC', sans-serif;
-        font-weight: bold;
-        text-align: center;
-        margin-left: 0;
-    }
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+      text-align: center;
+      font-family: 'Overlock SC', sans-serif;
 
-    .name-link {
-        font-size: 1.1rem;
     }
-
-    p {
-        margin-bottom: 2rem;
-        font-size: 0.8rem;
-        color: #ffffff;
-        text-decoration: none;
-    }
-
+  
     .contact-links {
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      text-align: center;
+      flex-direction: row;
+      gap: 20px;
+  
+      .contact-section {
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: center;
-        margin-top: 1rem;
-        gap: 2rem;
-        padding: 1rem;
-
-        .contact-card__link {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-decoration: none;
-            color: #ffffff;
-            padding: 10px;
-            border-radius: 8px;
-            transition: transform 0.3s, background-color 0.3s;
-
-            svg {
-                color: #ffffff;
-                font-size: 2rem;
-                margin-bottom: 0.5rem;
-                transition: transform 0.3s ease-in-out;
-            }
-
-            &:hover {
-                transform: translateY(-5px);
-                background-color: rgba(255, 255, 255, 0.2);
-            }
-
-            &:hover svg {
-                transform: scale(1.2);
-            }
-
-            &:active {
-                transform: translateY(0);
-            }
+        flex-direction: column;
+        gap: 10px;
+  
+        .name-link {
+          font-size: 1rem;
+          font-weight: 600;
+          color: #ffffff;
         }
+  
+        .contact-card__link {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 10px 15px;
+          background-color: #e0e0e0;
+          border-radius: 5px;
+          text-decoration: none;
+          color: #ffffff;
+          font-size: 1rem;
+          transition: background-color 0.3s ease;
+  
+          svg {
+            font-size: 1.2rem;
+            color: #348A81;
+          }
+  
+          &:hover {
+            background-color: #d1d1d1;
+          }
+  
+          &--whatsapp {
+            background-color: #25d366;
+            color: #fff;
+  
+            svg {
+              color: #fff;
+            }
+  
+            &:hover {
+              background-color: #1ebe57;
+            }
+          }
+  
+          &--email {
+            background-color: #348A81;
+            color: #fff;
+  
+            svg {
+              color: #fff;
+            }
+  
+            &:hover {
+              background-color: #55d2c5;
+            }
+          }
+        }
+      }
     }
-}
+  }
+  
