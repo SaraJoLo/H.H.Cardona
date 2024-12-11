@@ -3,9 +3,9 @@ import './ServiceCard.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-const ServiceCard = ({ title, details }) => {
+const ServiceCard = ({ title, image, details }) => {
   return (
-    <div className="service-card">
+    <div className="service-card" style={{backgroundImage:`url(${image})`}}>
       <div className="service-content">
         <h3 className="service-title">{title}</h3>
         <ul className="service-details">
@@ -17,6 +17,7 @@ const ServiceCard = ({ title, details }) => {
           ))}
         </ul>
       </div>
+      <div className="background-overlay"></div>
     </div>
   );
 };
