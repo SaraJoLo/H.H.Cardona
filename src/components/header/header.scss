@@ -41,3 +41,62 @@
     transform: translateY(-5px);
     color: #ff6347;
 }
+
+.menuButton {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .headerBox{
+        height: auto;
+        min-height: 4rem;
+        flex-wrap: wrap;
+
+    }
+
+    .titleBox {
+        font-size: 2rem; // Reducimos el tamaño del título en móvil
+    }
+
+    .menuButton {
+        display: block; // Mostramos el botón de menú en móvil
+    }
+
+    .navBar {
+        display: none; // Ocultamos el menú por defecto
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 1rem 0;
+        gap: 1rem;
+
+        &.active { // Clase que se añadirá cuando el menú esté abierto
+            display: flex;
+        }
+    }
+
+    .navOp {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+
+        &:hover {
+            transform: none; // Eliminamos la animación de hover en móvil
+            background-color: rgba(255, 255, 255, 0.1); // Efecto hover alternativo
+        }
+    }
+}
