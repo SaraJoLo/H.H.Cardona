@@ -1,13 +1,14 @@
-import React from 'react';
 import './home.scss';
+import { useState } from 'react';
+import React from 'react';
+import { useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import Carrousel from '../../components/carrousel/carrousel';
 import Map from '../../components/map/map';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWifi, faSoap, faMountain, faSwimmingPool, faPaw, faGamepad, faCar, faTv, faBaby, faKitchenSet, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import InfoService from '../../components/infoservice/infoservice';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import Reviews from '../../components/reviews/reviews';
 
 const amenities = [
   { icon: faWifi, label: "Wi-Fi" },
@@ -19,25 +20,31 @@ const amenities = [
   { icon: faTv, label: "TV" },
   { icon: faBaby, label: "Equipamiento para bebés" },
   { icon: faSoap, label: "Lavadora" },
-  { icon: faKitchenSet, label: "Cocina equipada" },
-]
+  { icon: faKitchenSet, label: "Cocina equipada" }
+];
 
 function Home() {
-  const [images,setImages] = useState([])
+  const [images, setImages] = useState([]);
+
   useEffect(() => {
-    fetch('./assets/json/img.json')
-    .then((res) => {
-      if (!res.ok) {
-        throw new Error('Error fetching the images');
-      }
-      return res.json();
-    })
-    .then((data) => {
-      setImages(data.images || []); 
-    })
-  },[])
-  
-  return (
+    fetch('/assets/json/img.json')
+        .then((res) => {
+            if (!res.ok) {
+                throw new Error(`HTTP error! status: ${res.status}`);
+            }
+            return res.json();
+        })
+        .then((data) => {
+            if (data.images && data.images.carrousel) {
+                setImages(data.images.carrousel);
+            } else {
+                console.error('Carrousel key not found in JSON');
+            }
+        })
+        .catch((err) => console.error('Fetch error:', err));
+}, []);
+
+    return (
     <div className="home-container">
       <div className='subtitle'>
         <p>"Tu Refugio en Lloret de Mar: tranquilidad y confort en cada rincón de Holiday Home Cardona"</p>
@@ -77,6 +84,9 @@ function Home() {
       </div>
       <InfoService />
       <Map />
+      <div id="reviews" className='reviews-box'>
+       < Reviews />
+      </div>
     </div>
   );
 }

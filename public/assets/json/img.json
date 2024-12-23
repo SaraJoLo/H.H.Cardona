@@ -1,17 +1,471 @@
 {
-    "images": [
-      "/assets/greatviews/drone.webp",
-      "/assets/livingroom/livingsiete.webp",
-      "/assets/garden/chiringuitocinco.jpg",
-      "/assets/garden/frentederecho.webp",
-      "/assets/livingroom/living8.jpg",
-      "/assets/garden/inicio1.webp",
-      "/assets/greatviews/asaodres.jpg",
-      "/assets/garden/dronetres.webp",
-      "/assets/rooms/room11.jpg",
-      "/assets/garden/frentederecho.webp",
-      "/assets/garden/uno.webp",
-      "/assets/livingroom/living5.webp",
-      "/assets/garden/dos.webp"
+    "images" : {
+      "carrousel": [
+     {
+      "id": 1,
+      "url": "/assets/greatviews/6drone.webp",
+      "alt": "Vista aérea espectacular de la casa vacacional"
+     },
+     {
+      "id": 2,
+      "url": "/assets/livingroom/living7.webp",
+      "alt": "Sala de estar moderna con decoración elegante"
+     },
+     {
+      "id": 3,
+      "url": "/assets/garden/5chiringuito.webp",
+      "alt": "Chiringuito en el jardín al atardecer"
+     },
+     {
+      "id": 4,
+      "url": "/assets/garden/12garden.webp",
+      "alt": "Vista del frente derecho de la casa con iluminación natural"
+     },
+     {
+      "id": 5,
+      "url": "/assets/livingroom/living8.jpg",
+      "alt": "Sala de estar amplia con muebles minimalistas"
+     },
+     {
+      "id": 6,
+      "url": "/assets/garden/1jardin.webp",
+      "alt": "Entrada principal del jardín con detalles florales"
+     },
+     {
+      "id": 7,
+      "url": "/assets/greatviews/1asaodres.jpg",
+      "alt": "Vista panorámica del entorno desde la terraza"
+     },
+     {
+      "id": 8,
+      "url": "/assets/garden/21garden.webp",
+      "alt": "Vista aérea del jardín con detalles del paisaje"
+     },
+     {
+      "id": 9,
+      "url": "/assets/rooms/room11.jpg",
+      "alt": "Habitación acogedora con cama doble y ventana al jardín"
+     },
+     {
+      "id": 10,
+      "url": "/assets/garden/15garden.jpg",
+      "alt": "Vista repetida del frente derecho de la casa"
+     },
+     {
+      "id": 11,
+      "url": "/assets/garden/9garden.webp",
+      "alt": "Área del jardín con caminos de piedra y césped cuidado"
+     },
+     {
+      "id": 12,
+      "url": "/assets/livingroom/living5.webp",
+      "alt": "Sala de estar pequeña con decoración rústica"
+     },
+     {
+      "id": 13,
+      "url": "/assets/garden/2drone.webp",
+      "alt": "Segunda área del jardín con sombra y asientos"
+     }
+    ],
+    "Habitaciones" : [
+      {
+        "id": 1,
+        "url": "/assets/rooms/room1.webp",
+        "alt": "Habitación principal con cama doble y ventana al jardín"
+      },
+      {
+        "id": 2,
+        "url": "/assets/rooms/room2.webp",
+        "alt": "Habitación con cama doble y decoración minimalista"
+      },
+      {
+        "id": 3,
+        "url": "/assets/rooms/room3.webp",
+        "alt": "Habitación con cama doble y ventana al jardín"
+      },
+      {
+        "id": 4,
+        "url": "/assets/rooms/room4.webp",
+        "alt": "Habitación con cama doble y decoración rústica"
+      },
+      {
+        "id": 5,
+        "url": "/assets/rooms/room5.webp",
+        "alt": "Habitación con cama doble y ventana al jardín"
+      },
+      {
+        "id": 6,
+        "url": "/assets/rooms/room6.webp",
+        "alt": "Habitación con cama doble y decoración minimalista"
+      },
+      {
+        "id": 7,
+        "url": "/assets/rooms/room7.webp",
+        "alt": "Habitación con cama doble y ventana al jardín"
+      },
+      {
+        "id": 8,
+        "url": "/assets/rooms/room8.webp",
+        "alt": "Habitación con cama doble y decoración rústica"
+      },
+      {
+        "id": 9,
+        "url": "/assets/rooms/room9.webp",
+        "alt": "Habitación con cama doble y ventana al jardín"
+      },
+      {
+        "id": 10,
+        "url": "/assets/rooms/room10.jpg",
+        "alt": "Habitación con cama doble y decoración minimalista"
+      },
+      {
+        "id": 11,
+        "url": "/assets/rooms/room11.jpg",
+        "alt": "Habitación acogedora con cama doble y ventana al jardín"
+      }
+    ],
+
+    "Jardín" : [
+      {
+        "id": 1,
+        "url":"/assets/garden/1drone.webp",
+        "alt": "Vista aérea del jardín con piscina y asientos"
+      },
+      {
+        "id": 2,
+        "url":"/assets/garden/2drone.webp",
+        "alt": "Vista aérea del jardín con piscina y asientos"
+      }
+      ,
+      {
+        "id": 3,
+        "url": "/assets/garden/3drone.webp",
+        "alt": "Chiringuito en el jardín al atardecer"
+      },
+      {
+        "id": 4,
+        "url": "/assets/garden/4drone.webp",
+        "alt": "Vista del frente derecho de la casa con iluminación natural"
+      },
+      {
+        "id": 5,
+        "url": "/assets/garden/1jardin.webp",
+        "alt": "Entrada principal del jardín con detalles florales"
+      },
+      {
+        "id": 6,
+        "url": "/assets/garden/2sillasexterior.webp",
+        "alt": "Vista aérea del jardín con detalles del paisaje"
+      },
+      {
+        "id": 7,
+        "url": "/assets/garden/3casitamadera.webp",
+        "alt": "Vista repetida del frente derecho de la casa"
+      },
+      {
+        "id": 8,
+        "url": "/assets/garden/5chiringuito.webp",
+        "alt": "Área del jardín con caminos de piedra y césped cuidado"
+      },
+      {
+        "id": 9,
+        "url": "/assets/garden/6garden.webp",
+        "alt": "Segunda área del jardín con sombra y asientos"
+      },
+      {
+        "id": 10,
+        "url": "/assets/garden/7garden.jpg",
+        "alt": "Segunda área del jardín con sombra y asientos"
+      },
+      {
+        "id": 11,
+        "url": "/assets/garden/8barragarden.webp",
+        "alt": "Segunda área del jardín con sombra y asientos"
+      },
+      {
+        "id": 12,
+        "url": "/assets/garden/9garden.webp",
+        "alt": "Segunda área del jardín con sombra y asientos"
+      },
+      {
+        "id": 13,
+        "url": "/assets/garden/10garden.jpg",
+        "alt": "Segunda área del jardín con sombra y asientos"
+      },
+      {
+        "id": 14,
+        "url": "/assets/garden/11chiri.webp",
+        "alt": "Segunda área del jardín con sombra y asientos"
+      },
+      {
+        "id": 15,
+        "url": "/assets/garden/12garden.webp",
+        "alt": "Segunda área del jardín con sombra y asientos"
+      },
+      {
+        "id": 16,
+        "url": "/assets/garden/13garden.webp",
+        "alt": "Segunda área del jardín con sombra y asientos" 
+      },
+      {
+        "id": 17,
+        "url": "/assets/garden/14garden.webp",
+        "alt": "Segunda área del jardín con sombra y asientos"
+      },
+      {
+        "id": 18,
+        "url": "/assets/garden/15garden.jpg",
+        "alt": "Segunda área del jardín con sombra y asientos"
+      },
+      {
+        "id": 19,
+        "url": "/assets/garden/16garden.jpg",
+        "alt": "Segunda área del jardín con sombra y asientos"
+      },
+      {
+        "id": 20,
+        "url": "/assets/garden/17garden.jpg",
+        "alt": "Segunda área del jardín con sombra y asientos"
+      },
+      {
+        "id": 21,
+        "url": "/assets/garden/18garden.jpg",
+        "alt": "Segunda área del jardín con sombra y asientos"
+      },
+      {
+        "id": 22,
+        "url": "/assets/garden/19garden.jpg",
+        "alt": "Segunda área del jardín con sombra y asientos"
+      },
+      {
+        "id": 23,
+        "url": "/assets/garden/20pingponguno.webp",
+        "alt": "Segunda área del jardín con sombra y asientos"
+      },
+      {
+        "id": 24,
+        "url": "/assets/garden/21garden.webp",
+        "alt": "Segunda área del jardín con sombra y asientos"
+      },
+      {
+        "id": 25,
+        "url": "/assets/garden/22garden.webp",
+        "alt": "Segunda área del jardín con sombra y asientos"
+      }
+    ],
+    "Lavabos" : [
+      {
+        "id": 1,
+        "url": "/assets/bathroom/bath1.webp",
+        "alt": "Baño principal con ducha y bañera"
+      },
+      {
+        "id": 2,
+        "url": "/assets/bathroom/bath2.webp",
+        "alt": "Baño con ducha y decoración"
+      }
+    ],
+    "Living" : [
+      {
+        "id": 1,
+        "url": "/assets/livingroom/living1.webp",
+        "alt": "Sala de estar con decoración moderna"
+      },
+      {
+        "id": 2,
+        "url": "/assets/livingroom/living2.webp",
+        "alt": "Sala de estar con decoración rústica"
+      },
+      {
+        "id": 3,
+        "url": "/assets/livingroom/living3.webp",
+        "alt": "Sala de estar con decoración minimalista"
+      },
+      {
+        "id": 4,
+        "url": "/assets/livingroom/living4.webp",
+        "alt": "Sala de estar con decoración elegante"
+      },
+      {
+        "id": 5,
+        "url": "/assets/livingroom/living5.webp",
+        "alt": "Sala de estar pequeña con decoración rústica"
+      },
+      {
+        "id": 6,
+        "url": "/assets/livingroom/living6.webp",
+        "alt": "Sala de estar con decoración moderna"
+      },
+      {
+        "id": 7,
+        "url": "/assets/livingroom/living7.webp",
+        "alt": "Sala de estar con decoración elegante"
+      },
+      {
+        "id": 8,
+        "url": "/assets/livingroom/living8.jpg",
+        "alt": "Sala de estar amplia con muebles minimalistas"
+      }
+    ],
+    "Vistas" : [
+      {
+        "id": 1,
+        "url": "/assets/greatviews/1asaodres.jpg",
+        "alt": "Parrilla en el jardin"
+      },
+      {
+        "id": 2,
+        "url": "/assets/greatviews/2balcon.webp",
+        "alt": "Vista panorámica del entorno desde la terraza"
+      },
+      {
+        "id": 3,
+        "url": "/assets/greatviews/3vistas.jpg",
+        "alt": "Vista panorámica del entorno desde la terraza"
+      },
+      {
+        "id": 4,
+        "url": "/assets/greatviews/4vistas.jpg",
+        "alt": "Vista panorámica del entorno desde la terraza"
+      },
+      {
+        "id": 5,
+        "url": "/assets/greatviews/5decoracion.jpg",
+        "alt": "Vista panorámica del entorno desde la terraza"
+      },
+      {
+        "id": 6,
+        "url": "/assets/greatviews/6drone.webp",
+        "alt": "Vista panorámica del entorno desde la terraza"
+      },
+      {
+        "id": 7,
+        "url": "/assets/greatviews/7estarmadera.jpg",
+        "alt": "Vista panorámica del entorno desde la terraza"
+      },
+      {
+        "id": 8,
+        "url": "/assets/greatviews/8jardindelantero.jpg",
+        "alt": "jardin delantero de la casa"
+      },
+      {
+        "id": 9,
+        "url": "/assets/greatviews/9jardindelantero.jpg",
+        "alt": "jardin delantero de la casa"
+      },
+      {
+        "id": 10,
+        "url": "/assets/greatviews/10terraza.webp",
+        "alt": "vistas de la casa"
+      },
+      {
+        "id": 11,
+        "url": "/assets/greatviews/11vistas.jpg",
+        "alt": "jardin delantero de la casa"
+      },
+      {
+        "id": 12,
+        "url": "/assets/greatviews/12vistas.webp",
+        "alt": "jardin delantero de la casa"
+      },
+      {
+        "id": 13,
+        "url": "/assets/greatviews/13vistas.webp",
+        "alt": "jardin delantero de la casa"
+      }
+    ],
+    "Cocina" : [
+      {
+        "id": 1,
+        "url": "/assets/kitchen/kit1.webp",
+        "alt": "Cocina moderna con isla central"
+      },
+      {
+        "id": 2,
+        "url": "/assets/kitchen/kit2.webp",
+        "alt": "Cocina con isla central y decoración rústica"
+      },
+      {
+        "id": 3,
+        "url": "/assets/kitchen/kit3.webp",
+        "alt": "Cocina con isla central y decoración minimalista"
+      },
+      {
+        "id": 4,
+        "url": "/assets/kitchen/kit4.webp",
+        "alt": "Cocina con isla central y decoración moderna"
+      }
+    ],
+    "Experiencias" : [
+      {
+        "id": 1,
+        "url": "/assets/experience/uno.jpg",
+        "alt": "Experiencia de descanso en con amigas jugando futbolin"
+      },
+      {
+        "id": 2,
+        "url": "/assets/experience/dos.jpg",
+        "alt": "Experiencia de descanso chimenea"
+      },
+      {
+        "id": 3,
+        "url": "/assets/experience/tres.jpg",
+        "alt": "Experiencia de descanso en la chimenea"
+      },
+      {
+        "id": 4,
+        "url": "/assets/experience/review.png",
+        "alt": "valoraciones"
+      },
+      {
+        "id": 5,
+        "url": "/assets/experience/aboutUs.jpg",
+        "alt": "Alejandra y Juan"
+      }
+    ],
+    "Lloret de Mar" :[
+      {
+        "id": 1,
+        "url": "/assets/lloret/1lloret.webp",
+        "alt": "Playa de Lloret de Mar"
+      },
+      {
+        "id": 2,
+        "url": "/assets/lloret/2lloret.webp",
+        "alt": "Playa de Lloret de Mar"
+      },
+      {
+        "id": 3,
+        "url": "/assets/lloret/3lloret.jpg",
+        "alt": "Playa de Lloret de Mar"
+      },
+      {
+        "id": 4,
+        "url": "/assets/lloret/4lloret.jpg",
+        "alt": "Playa de Lloret de Mar"
+      },
+      {
+        "id": 5,
+        "url": "/assets/lloret/5lloret.jpg",
+        "alt": "Playa de Lloret de Mar"
+      },
+      {
+        "id": 6,
+        "url": "/assets/lloret/6lloret.jpg",
+        "alt": "Playa de Lloret de Mar"
+      },
+      {
+        "id": 7,
+        "url": "/assets/lloret/7lloret.jpg",
+        "alt": "Playa de Lloret de Mar"
+      },
+      {
+        "id": 8,
+        "url": "/assets/lloret/8lloret.jpg",
+        "alt": "Playa de Lloret de Mar"
+      }
     ]
+  
   }
+
+}

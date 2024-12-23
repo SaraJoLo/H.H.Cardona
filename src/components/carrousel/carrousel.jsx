@@ -20,9 +20,14 @@ const Carrousel = ({ images }) => {
             </button>
             <div className="carrousel-container" ref={carrouselRef}>
                 <div className="image-wrapper">
-                    {images.map((image, index) => (
+                    {images.map((image) => (
 
-                        <img key={index} src={image} alt={`Carousel item ${index + 1}`} className="carousel-image" />
+                        <img 
+                        key={image.id}
+                        src={image.url}
+                        alt={image.alt}
+                        className="carousel-image"
+                        />
                         
                     ))}
                 </div>
