@@ -6,6 +6,8 @@ import Map from '../../components/map/map';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWifi, faSoap, faMountain, faSwimmingPool, faPaw, faGamepad, faCar, faTv, faBaby, faKitchenSet, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import InfoService from '../../components/infoservice/infoservice';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 const amenities = [
   { icon: faWifi, label: "Wi-Fi" },
@@ -19,23 +21,22 @@ const amenities = [
   { icon: faSoap, label: "Lavadora" },
   { icon: faKitchenSet, label: "Cocina equipada" },
 ]
-const images = [
-  '../public/assets/greatviews/drone.webp',
-  '../public/assets/garden/chiringuitocinco.jpg',
-  '../public/assets/livingroom/livingsiete.webp',
-  '../public/assets/garden/frentederecho.webp',
-  '../public/assets/livingroom/living8.jpg',
-  '../public/assets/garden/inicio1.webp',
-  '../public/assets/greatviews/asaodres.jpg',
-  '../public/assets/garden/dronetres.webp',
-  '../public/assets/rooms/room11.jpg',
-  '../public/assets/garden/frentederecho.webp',
-  '../public/assets/garden/uno.webp',
-  '../public/assets/livingroom/living5.webp',
-  '../public/assets/garden/dos.webp',
-];
 
 function Home() {
+  const [images,setImages] = useState([])
+  useEffect(() => {
+    fetch('./assets/json/img.json')
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error('Error fetching the images');
+      }
+      return res.json();
+    })
+    .then((data) => {
+      setImages(data.images || []); 
+    })
+  },[])
+  
   return (
     <div className="home-container">
       <div className='subtitle'>
