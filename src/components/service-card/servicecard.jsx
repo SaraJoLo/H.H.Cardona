@@ -11,7 +11,7 @@ const ServiceCard = ({ title, image, details }) => {
         <ul className="service-details">
           {details.map((detail, index) => (
             <li key={index}>
-                 <FontAwesomeIcon icon={detail.icon} style={{ fontSize: '12px', marginRight: '0.5rem' }} />
+                 <FontAwesomeIcon icon={detail.icon} />
                 {detail.text}
             </li>
           ))}
