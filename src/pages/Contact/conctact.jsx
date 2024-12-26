@@ -35,7 +35,9 @@ const Contact = () => {
           Envía un mensaje por WhatsApp o correo para consultar disponibilidad y realizar tu reserva. Estamos aquí para ayudarte.
         </p>
         <ContactCard {...owner} />
+      
       </div>
+
     </div>
   );
 };

@@ -47,7 +47,6 @@ const services = [
       {text :'WiFi de alta velocidad', icon: faArrowRight},
       {text :'Mesa de ping-pong', icon: faArrowRight},
       {text :'Libros y revistas', icon: faArrowRight},
-      {text :'Tostadora y hervidor', icon: faArrowRight},
     ], 
   },
   { 
@@ -59,15 +58,6 @@ const services = [
       {text :'Espacios seguros', icon: faArrowRight},
       {text :'Vajilla infantil', icon: faArrowRight},
       {text :'Bañera para bebés' , icon: faArrowRight},
-    ], 
-  },
-  { 
-    title: 'Vistas',
-    image:'/assets/greatviews/11vistas.jpg',
-    details: [
-      {text :'Balcón con vistas', icon: faArrowRight},
-      {text :'Entorno natural' , icon: faArrowRight},
-      {text : 'Vistas al mar', icon: faArrowRight},
     ], 
   },
   { 
@@ -84,11 +74,11 @@ const services = [
     title: 'Seguridad', 
     image:'/assets/garden/9garden.webp',
     details: [
+      {text : 'El anfitrión da la bienvenida', icon: faArrowRight},
       {text : 'Custodia de maletas', icon: faArrowRight},
       {text : 'Extintor de incendios', icon: faArrowRight},
       {text : 'Botiquín de primeros auxilios', icon: faArrowRight},
-      {text : 'El anfitrión da la bienvenida', icon: faArrowRight},
-   ], 
+    ], 
   },
   { 
     title: 'Instalaciones',
@@ -99,6 +89,15 @@ const services = [
       {text : 'Ventiladores portátiles', icon: faArrowRight},
       {text : 'Chimenea equipada', icon: faArrowRight},
       {text :  'Lavadora y tendedero', icon: faArrowRight},
+    ], 
+  },
+  { 
+    title: 'Vistas',
+    image:'/assets/greatviews/11vistas.jpg',
+    details: [
+      {text :'Balcón con vistas', icon: faArrowRight},
+      {text :'Entorno natural' , icon: faArrowRight},
+      {text : 'Paisajes amplios', icon: faArrowRight},
     ], 
   },
 ];

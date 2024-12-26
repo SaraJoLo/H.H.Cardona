@@ -19,9 +19,7 @@ const Map = () => {
   return (
     <>
       <section className="map-section">
-        <div className="text-box">
-          <p>¿CÓMO LLEGAR?</p>
-        </div>
+          <h3>¿CÓMO LLEGAR?</h3>
         <MapContainer
           center={{ lat: '41.7341501', lng: '2.8204023' }}
           zoom={13}
