@@ -29,13 +29,15 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      <h3>Contacto</h3>
+      <h3>CONTACTO</h3>
       <div className="contact-box">
         <p>
           Envía un mensaje por WhatsApp o correo para consultar disponibilidad y realizar tu reserva. Estamos aquí para ayudarte.
         </p>
         <ContactCard {...owner} />
+      
       </div>
+
     </div>
   );
 };

@@ -17,7 +17,7 @@ const img ="/assets/experience/review.png";
 function Reviews() {
     return (
       <div className="reviews-container">
-        <h3 className="main-title">VALORACIONES</h3>
+        <h3>VALORACIONES</h3>
         <div className="columnone">
           <img src={img} alt="reviewImage" className="review-img" />
           <h4>Reseñas de +7 años de experiencia</h4>

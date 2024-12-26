@@ -20,7 +20,7 @@ const ContactCard = ({ name1, phone1, email, name2, phone2 }) => {
 
   return (
     <div className="contact-card">
-      <h2>Juan y Alejandra</h2>
+      <h2>Contactanos!</h2>
       <div className="contact-links">
         <div className="contact-section">
           <p className="name-link">{name1}:</p>

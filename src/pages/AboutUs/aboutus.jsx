@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function AboutUs() {
   return (
     <div className='admin-box'>
-      <h3>Sobre nosotras</h3>
+      <h3>SOBRE NOSOTROS</h3>
 
      <div className='content-box'>
         <div className='about-card'>

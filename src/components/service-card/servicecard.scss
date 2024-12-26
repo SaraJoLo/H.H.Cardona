@@ -3,9 +3,12 @@ $overlay-color: rgba(173, 173, 173, 0.6);
 $text-color: #000;
 $font-title: 'Overlock SC', sans-serif;
 $font-details: 'Montserrat', sans-serif;
+
 .service-card {
-  width: 100%;
-  height: 15rem;
+  width: 90%;
+  height: 18rem;
+  margin-bottom: 1rem;
+  gap: 2rem;
   background-color: $primary-color;
   color: $text-color;
   display: flex;
@@ -22,11 +25,9 @@ $font-details: 'Montserrat', sans-serif;
 
   .background-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(221, 221, 221, 0.479);
+    background-color: rgba(234, 234, 234, 0.703);
     transition: opacity 0.3s ease;
   }
 
@@ -41,7 +42,10 @@ $font-details: 'Montserrat', sans-serif;
 
     .service-details {
       opacity: 1;
-      padding: 1rem;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       transform: translateY(0%);
     }
 
@@ -73,17 +77,16 @@ $font-details: 'Montserrat', sans-serif;
   .service-details {
     font-family: $font-details;
     list-style: none;
-    padding: 1rem;
-    margin-top: 0;
     opacity: 0;
     transform: translateY(20%);
     transition: opacity 0.3s ease, transform 0.3s ease;
 
     li {
-      font-size: 1.2rem;
+      font-size: 1rem;
       text-align: left;
       display: flex;
       align-items: center;
+     
 
       svg {
         font-size: 12px;
