@@ -57,7 +57,7 @@ const Gallery = () => {
 
   return (
     <div className="gallery-page">
-      <h1>Galería</h1>
+      <h3>GALERIA</h3>
 
       <div className="category-selector">
         {Object.keys(images).map((category) => (
