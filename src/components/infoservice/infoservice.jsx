@@ -26,7 +26,7 @@ function InfoService() {
             <p>SERVICIOS</p>
           <li class="list"><Link to="/services" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Servicios<FontAwesomeIcon icon={ faChevronRight} className='arrowButton' /></Link></li>
           <li class="list"><Link to="/gallery">Galería de fotos<FontAwesomeIcon icon={ faChevronRight} className='arrowButton' /></Link></li>
-          <li class="list"><Link to="/askers">Preguntas frecuentes  <FontAwesomeIcon icon={ faChevronRight} className='arrowButton' /></Link></li>
+          <li class="list"><Link to="/questions">Preguntas frecuentes  <FontAwesomeIcon icon={ faChevronRight} className='arrowButton' /></Link></li>
         </ul>
         </div>
         </section> 

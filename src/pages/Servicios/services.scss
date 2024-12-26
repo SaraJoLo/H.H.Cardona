@@ -1,21 +1,35 @@
 .services-page {
-    width: 100%;
-    padding: 1rem;
-    font-family: 'Montserrat', sans-serif;
-  
-    h3 {
-        text-align: left;
-        justify-content: safe;
-        font-size: 1.5rem;
-        font-weight: 300;
-        margin-bottom: 1.5rem;
-    }
-  
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+
+  h3 {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28.125rem, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+
+  @media screen and (max-width: 48rem) {
+    margin-bottom: 4rem;
+
     .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      gap: 1rem;
-      justify-items:center;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
     }
   }
-  
+
+  @media screen and (max-width: 30rem) {
+    .services-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+}

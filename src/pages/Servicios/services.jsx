@@ -6,7 +6,8 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const services = [
   { 
-    title: 'Habitaciones', 
+    title: 'Habitaciones',
+    image:'/assets/rooms/room1.webp',
     details: [
       {text :'3 camas dobles', icon: faArrowRight},
       {text :'4 camas individuales', icon: faArrowRight},
@@ -15,7 +16,8 @@ const services = [
     ],
   },
   { 
-    title: 'Baños', 
+    title: 'Baños',
+    image:'/assets/bathroom/bath1.webp', 
     details: [
       {text : 'Bañera', icon: faArrowRight},
       {text :'Secador', icon: faArrowRight},
@@ -25,7 +27,8 @@ const services = [
     ], 
   },
   { 
-    title: 'Cocina', 
+    title: 'Cocina',
+    image:'/assets/kitchen/kit3.webp',
     details: [
       {text :'Equipamiento completo', icon: faArrowRight},
       {text :'Microondas y horno', icon: faArrowRight},
@@ -36,7 +39,8 @@ const services = [
     ], 
   },
   { 
-    title: 'Entretenimiento', 
+    title: 'Entretenimiento',
+    image:'/assets/experience/tres.jpg',
     details: [
       {text :'TV con streaming', icon: faArrowRight},
       {text :'Juegos de mesa', icon: faArrowRight},
@@ -47,7 +51,8 @@ const services = [
     ], 
   },
   { 
-    title: 'Familias', 
+    title: 'Familias',
+    image:'/assets/livingroom/living7.webp',
     details: [
       {text :'Cuna disponible', icon: faArrowRight},
       {text :'Sillas para niños', icon: faArrowRight},
@@ -57,7 +62,8 @@ const services = [
     ], 
   },
   { 
-    title: 'Vistas', 
+    title: 'Vistas',
+    image:'/assets/greatviews/11vistas.jpg',
     details: [
       {text :'Balcón con vistas', icon: faArrowRight},
       {text :'Entorno natural' , icon: faArrowRight},
@@ -65,7 +71,8 @@ const services = [
     ], 
   },
   { 
-    title: 'Jardín', 
+    title: 'Jardín',
+    image:'/assets/greatviews/10terraza.webp',
     details: [
       {text : 'Patio o balcón privado', icon: faArrowRight},
       {text : 'Zona de barbacoa', icon: faArrowRight},
@@ -75,6 +82,7 @@ const services = [
   },
   { 
     title: 'Seguridad', 
+    image:'/assets/garden/9garden.webp',
     details: [
       {text : 'Custodia de maletas', icon: faArrowRight},
       {text : 'Extintor de incendios', icon: faArrowRight},
@@ -83,7 +91,8 @@ const services = [
    ], 
   },
   { 
-    title: 'Instalaciones', 
+    title: 'Instalaciones',
+    image:'/assets/garden/11chiri.webp',
     details: [
       {text : 'Piscina privada', icon: faArrowRight},
       {text : 'Calefacción', icon: faArrowRight},
@@ -96,10 +105,10 @@ const services = [
 function Services() {
   return (
     <div className="services-page">
-      <h3>Servicios</h3>
+      <h3>SERVICIOS</h3>
       <div className="services-grid">
         {services.map((service, index) => (
-          <ServiceCard key={index} title={service.title} details={service.details} />
+          <ServiceCard key={index} title={service.title} details={service.details} image={service.image}/>
         ))}
       </div>
     </div>
