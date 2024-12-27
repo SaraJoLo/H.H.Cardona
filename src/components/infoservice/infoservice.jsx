@@ -23,7 +23,7 @@ function InfoService() {
         
         <div className="info-container">
         <ul>
-            <p>SERVICIOS</p>
+            <p className="service-title">SERVICIOS</p>
           <li class="list"><Link to="/services" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Servicios<FontAwesomeIcon icon={ faChevronRight} className='arrowButton' /></Link></li>
           <li class="list"><Link to="/gallery">Galería de fotos<FontAwesomeIcon icon={ faChevronRight} className='arrowButton' /></Link></li>
           <li class="list"><Link to="/questions">Preguntas frecuentes  <FontAwesomeIcon icon={ faChevronRight} className='arrowButton' /></Link></li>
