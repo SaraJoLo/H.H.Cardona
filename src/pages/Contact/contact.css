@@ -3,15 +3,14 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #000000;
-
-  h3 {
-    text-align: left;
-    margin-bottom: 1rem;
-    font-size: 24px;
-    font-weight: 300;
-  }
+}
+.contact-page h3 {
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .contact-box {
@@ -21,48 +20,39 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  p {
-    margin-bottom: 20px;
-    font-size: 1rem;
-    color: #333333;
-  }
+}
+.contact-box p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #333333;
 }
 
 @media (max-width: 768px) {
   .contact-page {
     padding: 1rem;
-    
-
-    h3 {
-      font-size: 20px;
-    }
   }
-
+  .contact-page h3 {
+    font-size: 20px;
+  }
   .contact-box {
     gap: 0.5rem;
     margin-bottom: 2rem;
-
-    p {
-      font-size: 0.9rem;
-    }
+  }
+  .contact-box p {
+    font-size: 0.9rem;
   }
 }
-
 @media (max-width: 480px) {
   .contact-page {
     padding: 1rem;
-
-    h3 {
-      font-size: 18px;
-    }
   }
-
+  .contact-page h3 {
+    font-size: 18px;
+  }
   .contact-box {
     gap: 0.5rem;
-
-    p {
-      font-size: 0.8rem;
-    }
   }
-}
+  .contact-box p {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=contact.css.map */

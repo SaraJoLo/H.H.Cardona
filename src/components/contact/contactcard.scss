@@ -1,85 +1,131 @@
 .contact-card {
-    padding: 20px;
-    background-color: #505801;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #fff;
-  
-    h2 {
-      font-size: 1.5rem;
-      font-weight: 400;
-      margin-bottom: 20px;
-      text-align: center;
-      font-family: 'Overlock SC', sans-serif;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #505801;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
 
-    }
-  
-    .contact-links {
-      font-family: 'Montserrat', sans-serif;
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Overlock SC', sans-serif;
+  }
+
+  .contact-links {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    gap: 20px;
+
+    .contact-section {
       display: flex;
-      text-align: center;
-      flex-direction: row;
-      gap: 20px;
-  
-      .contact-section {
+      flex-direction: column;
+      gap: 10px;
+
+      .name-link {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #ffffff;
+      }
+
+      .contact-card__link {
         display: flex;
-        flex-direction: column;
+        align-items: center;
         gap: 10px;
-  
-        .name-link {
-          font-size: 1rem;
-          font-weight: 600;
-          color: #ffffff;
+        padding: 10px 15px;
+        background-color: #e0e0e0;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+
+        svg {
+          font-size: 1.2rem;
+          color: #348a81;
         }
-  
-        .contact-card__link {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          padding: 10px 15px;
-          background-color: #e0e0e0;
-          border-radius: 5px;
-          text-decoration: none;
-          color: #ffffff;
-          font-size: 1rem;
-          transition: background-color 0.3s ease;
-  
+
+        &:hover {
+          background-color: #d1d1d1;
+        }
+
+        &--whatsapp {
+          background-color: #25d366;
+          color: #fff;
+
           svg {
-            font-size: 1.2rem;
-            color: #348A81;
+            color: #fff;
           }
-  
+
           &:hover {
-            background-color: #d1d1d1;
+            background-color: #1ebe57;
           }
-  
-          &--whatsapp {
-            background-color: #25d366;
+        }
+
+        &--email {
+          background-color: #348a81;
+          color: #fff;
+
+          svg {
             color: #fff;
-  
-            svg {
-              color: #fff;
-            }
-  
-            &:hover {
-              background-color: #1ebe57;
-            }
           }
-  
-          &--email {
-            background-color: #348A81;
-            color: #fff;
-  
-            svg {
-              color: #fff;
-            }
-  
-            &:hover {
-              background-color: #55d2c5;
-            }
+
+          &:hover {
+            background-color: #55d2c5;
           }
         }
       }
     }
   }
-  
+}
+
+@media (max-width: 768px) {
+  .contact-card {
+    width: 100%;
+    padding: 15px;
+
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    .contact-links {
+      flex-direction: column;
+      gap: 8px;
+
+      .contact-section {
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    width: 100%;
+    padding: 10px;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    .contact-links {
+      gap: 8px;
+
+      .contact-section {
+        align-items: center;
+      }
+
+      .contact-card__link {
+        font-size: 1rem;
+        padding: 8px 12px;
+      }
+    }
+  }
+}

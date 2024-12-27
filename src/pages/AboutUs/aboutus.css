@@ -1,0 +1,62 @@
+.admin-box {
+  width: 100%;
+  margin: 0;
+  min-height: 87.4vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "montserrat", sans-serif;
+}
+.admin-box h3 {
+  text-align: left;
+  margin: 2rem 0 1rem 2rem;
+  font-size: 24px;
+  font-weight: 300;
+}
+.admin-box .content-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+}
+.admin-box .about-card {
+  background-color: #c1c87d;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+.admin-box .admin-img {
+  width: 16rem;
+  margin-bottom: 1rem;
+}
+.admin-box .admin-features {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+.admin-box .admin-features li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+  font-size: 14px;
+  color: #333;
+}
+.admin-box .admin-features li svg {
+  font-size: 12px;
+}
+.admin-box .about-box {
+  flex: 0 50%;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 2;
+}
+.admin-box .about-box h3 {
+  margin: 0 0 2rem;
+}
+.admin-box .about-box p {
+  font-size: 14px;
+}/*# sourceMappingURL=aboutus.css.map */
