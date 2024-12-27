@@ -32,6 +32,7 @@ function Reviews() {
         </div>
         <div className="columntwo">
           <p>Recomendaciones de los húespedes: </p>
+          <section className="star-container">
           <ul>
             <p>
               <FontAwesomeIcon icon={faSprayCanSparkles} className="fa-icon" />
@@ -66,7 +67,7 @@ function Reviews() {
                 <FontAwesomeIcon icon={faStar} />
               </div>
             </p>
-            <p>
+            <p >
               <FontAwesomeIcon icon={faComment} className="fa-icon" />
               Comunicación
               <div className="stars">
@@ -99,7 +100,9 @@ function Reviews() {
                 <FontAwesomeIcon icon={faStarHalf} />
               </div>
             </p>
+          
           </ul>
+          </section>
         </div>
       </div>
     );

@@ -52,4 +52,41 @@
     color: #ffffff;
     font-size: 1.5rem;
   }
+
+  
+  @media (max-width: 768px) {
+    .footerBox {
+      flex-direction: column; 
+      height: 100%;
+      text-align: center;
+    }
+  
+    .footerContent {
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .footerText {
+      font-size: 0.7rem;
+      text-align: center; 
+      margin-top: 1rem;
+    }
+  
+    .footerNav {
+      flex-direction: column; 
+      gap: 0.8rem; 
+      align-items: center;
+    }
+  
+    .footerLink {
+      font-size: 0.9rem; 
+    }
+  
+    .socialIcons {
+      justify-content: center; 
+      gap: 1rem;
+    }
+  }
   
