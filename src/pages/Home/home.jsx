@@ -64,7 +64,7 @@ function Home() {
             {amenities.map((item, index) => (
               <div key={index} className="amenity-item">
                 <FontAwesomeIcon icon={item.icon} className="amenity-icon" />
-                <span>{item.label}</span>
+                <span  className="amenity-text">{item.label}</span>
               </div>
             ))}
           </div>

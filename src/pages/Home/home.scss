@@ -1,150 +1,174 @@
-.home-container {
+// Variables
+$font-family: 'Montserrat';
+$font-size-subtitle: 1.2rem;
+$font-size-text: 1rem;
+$color-primary: #000000;
+$color-secondary: #ffffff;
+$color-accent: #E08401;
+$color-divider: #cececeba;
+$spacing-small: 1rem;
+$spacing-medium: 2rem;
+$spacing-large: 3rem;
+$border-radius: 15px;
+
+// Mixins
+@mixin flex-center($direction: row, $justify: center, $align: center) {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin transition($property: all, $duration: 0.3s, $ease: ease) {
+  transition: $property $duration $ease;
+}
+
+// Styles
+.home-container {
+  width: 100%;
+  @include flex-center(column, space-between, center);
   overflow-x: hidden;
   flex: 1;
-  justify-content: space-between;
-  font-family: 'Montserrat';
-}
+  font-family: $font-family;
 
-.subtitle {
-  font-size: 1.2rem;
-  margin: 2rem;
-  font-weight: 300;
-  color: #000000;
-}
+  .subtitle {
+    font-size: $font-size-subtitle;
+    margin: $spacing-medium;
+    font-weight: 300;
+    color: $color-primary;
+  }
 
-.description-container {
-  max-width: 1300px;
-  margin: 0 auto; 
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  margin-top: 2rem;
-}
+  .description-container {
+    margin: 0;
+    @include flex-center(row, flex-start, stretch);
+    gap: $spacing-medium;
+    margin-top: $spacing-medium;
 
-.text-section {
-  flex: 1;
-  margin-left: 3rem;
-  padding: 1rem;
-}
+    .text-section {
+      flex: 1;
+      margin-left: $spacing-large;
+      padding: $spacing-small;
 
-.text-section p {
-  margin: 3rem 0;
-  font-size: 1rem;
-  line-height: 1.6;
-}
+      p {
+        margin: $spacing-large 0;
+        font-size: $font-size-text;
+        line-height: 1.6;
+      }
+    }
 
-.divider {
-    width: 2px;
-    background-color: #929292;
-}
+    .divider {
+      width: 2px;
+      background-color: $color-divider;
+    }
+  }
 
+  .icon-section {
+    flex: 1;
+    padding: $spacing-small;
+    @include flex-center(column, space-around);
 
-.icon-section {
-  flex: 1;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  margin-right: 2rem;
-}
+    h3 {
+      @include flex-center(column, center, center);
+      font-size: $font-size-subtitle;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+  }
 
-.icon-section h3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: safe;
-  font-size: 1.2rem;
-  font-weight: 300;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
+  .amenities-grid {
 
-.amenities-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  width: 100%;
-}
-
-.amenity-item {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  font-size: 1rem;
-  color: #000000;
-}
-
-.amenity-icon {
-  color: #000000;
-  font-size: 1rem;
-  width: 1rem;
-  height: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.moreButton .button-link{
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  color: #000000;
-  font-size: 1rem;
-  text-decoration: none;
-  gap: 0.3rem;
-}
-.contact-box{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5rem;
-  padding: 2rem;
-}
-.button-link-contact {
-  width: 18rem;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1rem;
-  border-radius: 15px;
-  color: #ffffff;
-  background-color: #E08401;
-  font-size: 1.5rem;
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  transition: color 0.3s ease;
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    height: 100%;
-    border: 2px solid #ffffff;
-    border-radius: 15px;
-    box-sizing: border-box;
-    z-index: -1;
-    transform: scale(0);
-    transition: transform 0.5s ease;
+
+    .amenity-item {
+      display: flex;
+      @include flex-center(row, flex-start, center);
+      font-size: $font-size-text;
+      gap: 0.5rem;
+      height: 3rem;
+      color: $color-primary;
+
+      .amenity-icon {
+        color: $color-primary;
+        font-size: 1.5rem;
+        display: flex;
+        width: 2rem;
+        height: 1.2rem;
+        @include flex-center(row, center, center);
+      }
+
+      .amenity-text {
+        line-height: 1.4;
+        word-wrap: break-word;
+        width: 100%;
+        height: 1rem;
+        text-align: left;
+      }
+    }
   }
-  &:hover::after {
-    transform: scale(1);
+
+  .moreButton {
+    .button-link {
+      margin-top: $spacing-medium;
+      @include flex-center(row, flex-end, center);
+      color: $color-primary;
+      font-size: $font-size-text;
+      text-decoration: none;
+      gap: 0.3rem;
+    }
   }
-}
-.map-container{
-  margin-top: 3rem;
-  padding: 1rem;
-  width: 100%;
-  height: 30rem;
-}
-.reviews-box{
-  width: 100%;
+
+  .contact-box {
+    @include flex-center(column);
+    margin-top: $spacing-large;
+    padding: $spacing-medium;
+
+    .button-link-contact {
+      width: 18rem;
+      height: 4rem;
+      @include flex-center();
+      margin-top: $spacing-small;
+      border-radius: $border-radius;
+      color: $color-secondary;
+      background-color: $color-accent;
+      font-size: 1.5rem;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      @include transition(color);
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 2px solid $color-secondary;
+        border-radius: $border-radius;
+        box-sizing: border-box;
+        z-index: -1;
+        transform: scale(0);
+        @include transition(transform, 0.5s);
+      }
+
+      &:hover::after {
+        transform: scale(1);
+      }
+    }
+  }
+
+  .map-container {
+    margin-top: $spacing-large;
+    padding: $spacing-small;
+    width: 100%;
+    height: 30rem;
+  }
+
+  .reviews-box {
+    width: 100%;
+  }
 }
