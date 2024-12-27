@@ -1,0 +1,24 @@
+.termsContainer {
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0;
+  text-align: left;
+}
+.termsContainer h1 {
+  font-size: 2rem;
+  color: #C25721;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.termsContainer h2 {
+  font-size: 1.5rem;
+  color: #C25721;
+  margin-top: 2rem;
+}
+.termsContainer p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=legal.css.map */

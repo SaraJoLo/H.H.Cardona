@@ -1,14 +1,13 @@
 .map-section {
   margin-top: 10rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   gap: 0.5rem;
-  
-  h3{
-    text-align: left;
-    margin: 2rem 0 1rem 1.5rem;
-    font-size: 24px;
-    font-weight: 300;
-  }
+}
+.map-section h3 {
+  text-align: left;
+  margin: 2rem 0 1rem 1.5rem;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .leaflet-container {
@@ -22,14 +21,11 @@
   justify-content: center;
 }
 
-
-
 .google-maps-link {
   font-size: 1rem;
   font-weight: 300;
   color: #646464;
   margin-top: 1rem;
-  
 }
 
 .google-maps-link a {
@@ -37,19 +33,19 @@
   text-decoration: none;
   transition: color 0.3s;
   margin-left: 1rem;
-
-  &:hover {
-   color: #242424;
-  }
 }
-.more-info{
+.google-maps-link a:hover {
+  color: #242424;
+}
+
+.more-info {
   padding: 1rem;
-  h3{
-    font-size: 1.1rem;
-     font-weight: 400;
-     margin-top: 2rem;
-     margin-bottom: 1rem;
-   }
+}
+.more-info h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .routes-container {
@@ -74,6 +70,7 @@
 .routes-list li {
   margin: 0;
 }
+
 .routes-list a {
   display: flex;
   align-items: center;
@@ -92,22 +89,19 @@
 
 @media (max-width: 768px) {
   .map-section {
-    margin-top: 25rem; 
+    margin-top: 25rem;
     padding: 0.5rem;
   }
-
   .leaflet-container {
     height: 18rem;
     width: 95%;
   }
-
   .text-box {
     font-size: 1rem;
     padding-left: 3%;
   }
-
   .routes-list {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-}
+}/*# sourceMappingURL=map.css.map */

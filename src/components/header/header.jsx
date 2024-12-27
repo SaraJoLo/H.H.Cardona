@@ -7,7 +7,10 @@ function Header() {
   return (
     <section className="headerBox">
       <div className="titleBox">
-        <a href="/" className="titleLink">Holiday Home Cardona</a>
+        <a href="/" className="titleLink">
+        <span className='full-title'>Holiday Home Cardona</span>
+        <span className='short-title'>H.H Cardona</span>
+        </a>
       </div>
       
       <button 
@@ -15,9 +18,9 @@ function Header() {
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Menu"
       >
-        <span></span>
-        <span></span>
-        <span></span>
+        <span className='hamburgerMenu'></span>
+        <span className='hamburgerMenu'></span>
+        <span className='hamburgerMenu'></span>
       </button>
 
       <div>

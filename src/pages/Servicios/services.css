@@ -1,0 +1,31 @@
+.services-page {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+.services-page h3 {
+  text-align: left;
+  margin: 2rem 0 1rem 2rem;
+  font-size: 24px;
+  font-weight: 300;
+}
+.services-page .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28.125rem, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+@media screen and (max-width: 48rem) {
+  .services-page {
+    margin-bottom: 4rem;
+  }
+  .services-page .services-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+@media screen and (max-width: 30rem) {
+  .services-page .services-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}/*# sourceMappingURL=services.css.map */
