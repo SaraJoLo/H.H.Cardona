@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './header.scss';
 
 function Header() {
@@ -7,12 +8,12 @@ function Header() {
   return (
     <section className="headerBox">
       <div className="titleBox">
-        <a href="/" className="titleLink">
-        <span className='full-title'>Holiday Home Cardona</span>
-        <span className='short-title'>H.H Cardona</span>
-        </a>
+        <Link to="/" className="titleLink">
+          <span className='full-title'>Holiday Home Cardona</span>
+          <span className='short-title'>H.H Cardona</span>
+        </Link>
       </div>
-      
+
       <button 
         className="menuButton" 
         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -25,11 +26,11 @@ function Header() {
 
       <div>
         <ul className={`navBar ${isMenuOpen ? 'active' : ''}`}>
-          <li className="navOp"><a href="/">Inicio</a></li>
-          <li className="navOp"><a href="/aboutus">Sobre nosotros</a></li>
-          <li className="navOp"><a href="/services">Servicios</a></li>
-          <li className="navOp"><a href="/gallery">Galería</a></li>
-          <li className="navOp"><a href="/contact">Contacto</a></li>
+          <li className="navOp"><Link to="/">Inicio</Link></li>
+          <li className="navOp"><Link to="/aboutus">Sobre nosotros</Link></li>
+          <li className="navOp"><Link to="/services">Servicios</Link></li>
+          <li className="navOp"><Link to="/gallery">Galería</Link></li>
+          <li className="navOp"><Link to="/contact">Contacto</Link></li>
         </ul>
       </div>
     </section>
