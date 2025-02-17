@@ -6,7 +6,8 @@ const Contact = () => {
   const owner = {
     name1: "Juan",
     phone1: "+34675621904",
-    email: "jjalarcon@gmail.com",
+    email1:"jjalarcon60@gmail.com",
+    email2:"aperez7@xtec.cat",
     name2: "Alejandra",
     phone2: "+34605116278",
   };

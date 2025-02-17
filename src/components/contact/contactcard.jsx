@@ -5,13 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-const ContactCard = ({ name1, phone1, email, name2, phone2 }) => {
+const ContactCard = ({ name1, phone1, email1, name2, phone2, email2 }) => {
   const generateWhatsAppLink = (phone) =>
     `https://wa.me/${phone}?text=${encodeURIComponent(
       "Hola, me gustaría reservar Holiday Home Cardona. ¿Podría darme información sobre el precio y disponibilidad?"
     )}`;
 
-  const generateMailToLink = () =>
+  const generateMailToLink = (email) =>
     `mailto:${email}?subject=${encodeURIComponent(
       "Quiero reservar Holiday Home Cardona"
     )}&body=${encodeURIComponent(
@@ -34,7 +34,7 @@ const ContactCard = ({ name1, phone1, email, name2, phone2 }) => {
             <p>Enviar mensaje por WhatsApp</p>
           </a>
           <a
-            href={generateMailToLink()}
+            href={generateMailToLink(email1)}
             target="_blank"
             rel="noopener noreferrer"
             className="contact-card__link contact-card__link--email"
@@ -55,6 +55,15 @@ const ContactCard = ({ name1, phone1, email, name2, phone2 }) => {
             <FontAwesomeIcon icon={faWhatsapp} />
             <p>Enviar mensaje por WhatsApp</p>
           </a>
+          <a
+            href={generateMailToLink(email2)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-card__link contact-card__link--email"
+          >
+            <FontAwesomeIcon icon={faEnvelope} />
+            <p>Enviar e-mail</p>
+          </a>
         </div>
       </div>
     </div>
@@ -64,9 +73,10 @@ const ContactCard = ({ name1, phone1, email, name2, phone2 }) => {
 ContactCard.propTypes = {
   name1: PropTypes.string.isRequired,
   phone1: PropTypes.string.isRequired,
-  email: PropTypes.string.isRequired,
+  email1: PropTypes.string.isRequired,
   name2: PropTypes.string.isRequired,
   phone2: PropTypes.string.isRequired,
+  email2: PropTypes.string.isRequired,
 };
 
 export default ContactCard;
