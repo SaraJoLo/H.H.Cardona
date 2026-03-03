@@ -18,7 +18,7 @@ function Questions() {
                 <p> La casa cuenta con: <br />Dormitorio 1:  1 cama doble
                     Dormitorio 2:  1 cama doble
                     Dormitorio 3:  1 cama doble
-                    Dormitorio 4:  3 camas individuales y  1 cama doble. <br />En total entran 12 adultos.</p>
+                    Dormitorio 4:  3 camas individuales y  1 cama doble. <br />En total entran 10 adultos.</p>
                 <h2>¿Se admiten mascotas?</h2>
                 <p>Si! mientras sea cuidadoso y responsable su dueño con respecto al cuidado de los elementos del hogar y limpieza.</p>
                 <h2>¿A qué distancia esta Holiday Home Cardona del centro de Lloret del Mar?</h2>
@@ -44,20 +44,15 @@ function Questions() {
                 <h2>Condiciones para estancias con niños</h2>
                 <p>Se pueden alojar niños de cualquier edad.
                     Los niños a partir de 16 años pagan como adultos en este alojamiento.
-
-                    Cuna a petición : € 10 por niño y noche (2 - 11 años)
-                    Cama supletoria a petición : € 15 por niño y noche (+ 12 años)
-                    Cama supletoria a petición: € 20 por persona y noche
-
                     El precio de las cunas y las camas supletorias no está incluido en el precio total y se tiene que pagar por separado durante la estancia.
                     El número de camas supletorias y cunas permitido depende de la opción que escojas. Consulta la opción que has escogido para saber más.
                     Todas las cunas y camas supletorias están sujetas a disponibilidad..</p>
                 <h2>Condiciones sobre eventos</h2>
                 <p>No se pueden celebrar fiestas/eventos
                     Horario sin ruido
-                    En este alojamiento no se pueden celebrar despedidas de soltero o soltera ni fiestas similares.
+                    En este alojamiento no se pueden celebrar fiestas o eventos en el exterior ni interior. Respetamos el entorno y horario de descanso de nuestros vecinos, por lo que no se permiten ruidos molestos en el alojamiento.
                     Este alojamiento está situado en una zona residencial, por lo que se pide a los clientes no hacer demasiado ruido.
-                    No se puede hacer ruido de 23:00:00 a 08:00:00.</p>
+                    No se puede hacer ruido de 22:00:00 a 08:00:00.</p>
             </section></>
             </div>
 
