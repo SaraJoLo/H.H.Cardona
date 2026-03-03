@@ -52,7 +52,7 @@ function Home() {
       <Carrousel images={images} />
       <div className="description-container">
         <div className="text-section">
-          <p>Escapa al lujo y la tranquilidad en esta casa rural en Lloret de Mar. Con capacidad para 13 personas, piscina privada, amplios jardines y actividades para toda la familia. ¡Perfecta para un retiro memorable! La piscina en verano y la chimenea en invierno son, sin duda alguna, sus mayores atracciones.</p>
+          <p>Escapa al lujo y la tranquilidad en esta casa rural en Lloret de Mar. Con capacidad para 10 personas, piscina privada, amplios jardines y actividades para toda la familia. ¡Perfecta para un retiro memorable! La piscina en verano y la chimenea en invierno son, sin duda alguna, sus mayores atracciones.</p>
           <p>Dos barbacoas, mucho jardín con césped, ping pong, dardos, fútbol sala, jersey para niños, juegos de mesa, biblioteca de cine, cierre de protección para niños, tronas, cunas... Todo lo que necesitas para pasar unos días inolvidables en cualquier época del año con tu familia o amigos.</p>
         </div>
 
